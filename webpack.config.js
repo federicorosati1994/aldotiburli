@@ -1,7 +1,7 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var FaviconsWebpackPlugin = require('favicons-webpack-plugin')
-
+var FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+var webpack = require('webpack');
 
 module.exports = {
   
@@ -12,6 +12,7 @@ module.exports = {
     filename: "bundle.js"
   },
 
+  //Use a different loader for each file extension
   module: {
     rules: [
       {
@@ -24,14 +25,21 @@ module.exports = {
         options: {
           limit: 10000
         }
+      },
+     {
+        test: /(flickity|fizzy-ui-utils|get-size|unipointer)\.js$/,
+        loader: 'imports-loader?define=>false&this=>window'
       }
     ]
   },
 
   plugins: [
 
-    //auto generate favicon
-    //new FaviconsWebpackPlugin('./favicons/favicon.png'),
+   //Needed by bootstrap
+   new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
 
     new HtmlWebpackPlugin({
       template: './index.html',
@@ -49,6 +57,7 @@ module.exports = {
       },
       inject: true,
     }),
+
   ],
 
   //webpack-dev-server

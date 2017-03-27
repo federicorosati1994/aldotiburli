@@ -5,7 +5,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<title>Aldo - Parrucchiere Per Uomo</title>
+		
 		<meta name="description" content="Aldo - Parrucchiere per uomo. Vieni a trovarmi a Via Costantino, 99 - Roma." />
 		<meta name="keywords" content="aldo, parrucchiere per uomo, parrucchiere roma, barbiere roma, barbiere, via costantino 99, parrucchiere san paolo basilica, via costantino, basilica san paolo barbiere, garbatella parrucchiere" />
 		<meta name="author" content="Federico Rosati" />
@@ -19,13 +21,16 @@
 	</head>
 	
 	<body>
+
 		<header>
 			<section class="hero">
 				<div class="texture-overlay"></div>
 				<div class="container">
 					<div class="row nav-wrapper">
 						<div class="col-md-6 col-sm-6 col-xs-6 text-left wow rubberBand">
-							<a href="#"><img style="width: 60px; margin-top: -11.5px;" src="img/logooo.png" alt="Aldo - Parrucchiere per uomo"></a>
+							<a href="#"><img style="width: 60px; margin-top: -11.5px;" 
+							src="<%= require('./img/logooo.png') %>"
+						 alt="Aldo - Parrucchiere per uomo"></a>
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-6 text-right navicon wow fadeInUp">
 							<p>MENU</p><a id="trigger-overlay" class="nav_slide_button nav-toggle" href="#"><span></span></a>
@@ -43,6 +48,7 @@
 				</div>
 			</section>
 		</header>
+
 		<section class="video" id="about">
 			<div class="container">
 				<div class="row">
@@ -60,7 +66,9 @@
 						<div class="features-bg wow zoomIn">
 							<div class="texture-overlay"></div>
 							<div class="features-img">
-								<img class="wow zoomIn" style="width: 120px;" src="img/logooo.png" alt="HTML5 Logo">
+								<img class="wow zoomIn" style="width: 120px;" 
+								src="<%= require('./img/logooo.png') %>"
+								alt="HTML5 Logo">
 							</div>
 						</div>
 					</div>
@@ -93,6 +101,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="features-list" id="features">
 			<div class="container">
 				<div class="row">
@@ -132,10 +141,12 @@
 					<ul class="grid">
 						<li class="wow zoomIn">
 							<figure>
-								<img src="img/01-screenshot.jpg" alt="Screenshot 01">
+								<img
+								src="<%= require('./img/01-screenshot.jpg') %>"  
+								alt="Screenshot 01">
 								<figcaption>
 								<div class="caption-content">
-									<a href="img/large/01.jpg" class="single_image">
+									<a href="<%= require('./img/01-screenshot.jpg') %>"  class="single_image">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
@@ -144,10 +155,11 @@
 						</li>
 						<li class="wow zoomIn">
 							<figure>
-								<img src="img/02-screenshot.jpg" alt="Screenshot 01">
+								<img src="<%= require('./img/02-screenshot.jpg') %>" 
+								 alt="Screenshot 01">
 								<figcaption>
 								<div class="caption-content">
-									<a href="img/large/02.jpg" class="single_image">
+									<a href="<%= require('./img/02-screenshot.jpg') %>" class="single_image">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
@@ -156,10 +168,12 @@
 						</li>
 						<li class="wow zoomIn">
 							<figure>
-								<img src="img/03-screenshot.jpg" alt="Screenshot 01">
+								<img 
+								src="<%= require('./img/03-screenshot.jpg') %>"  
+								alt="Screenshot 01">
 								<figcaption>
 								<div class="caption-content">
-									<a href="img/large/03.jpg" class="single_image">
+									<a href="<%= require('./img/03-screenshot.jpg') %>" class="single_image">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
@@ -168,26 +182,30 @@
 						</li>
 						<li class="wow zoomIn">
 							<figure>
-								<img src="img/04-screenshot.jpg" alt="Screenshot 01">
+								<img 
+								src="<%= require('./img/04-screenshot.jpg') %>"  
+								 alt="Screenshot 04">
 								<figcaption>
 								<div class="caption-content">
-									<a href="img/large/04.jpg" class="single_image">
+									<a href="<%= require('./img/04-screenshot.jpg') %>" class="single_image">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
 								</figcaption>
 							</figure>
 						</li>
-					</ul>
+					</ul> 
 				</div>
 				<div class="row">
-					<ul class="grid">
+ 					<ul class="grid">
 						<li class="wow zoomIn">
 							<figure>
-								<img src="img/05-screenshot.jpg" alt="Screenshot 01">
+								<img
+								src="<%= require('./img/05-screenshot.jpg') %>"  
+								 alt="Screenshot 05">
 								<figcaption>
 								<div class="caption-content">
-									<a href="img/large/05.jpg" class="single_image">
+									<a href="<%= require('./img/05-screenshot.jpg') %>" class="single_image">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
@@ -196,10 +214,13 @@
 						</li>
 						<li class="wow zoomIn">
 							<figure>
-								<img src="img/06-screenshot.jpg" alt="Screenshot 01">
+								<img
+								src="<%= require('./img/06-screenshot.jpg') %>"  
+
+								alt="Screenshot 01">
 								<figcaption>
 								<div class="caption-content">
-									<a href="img/large/06.jpg" class="single_image">
+									<a href="<%= require('./img/06-screenshot.jpg') %>" class="single_image">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
@@ -208,10 +229,12 @@
 						</li>
 						<li class="wow zoomIn">
 							<figure>
-								<img src="img/07-screenshot.jpg" alt="Screenshot 01">
+								<img
+								src="<%= require('./img/07-screenshot.jpg') %>"  
+							 	alt="Screenshot 01">
 								<figcaption>
 								<div class="caption-content">
-									<a href="img/large/07.jpg" class="single_image">
+									<a href="<%= require('./img/07-screenshot.jpg') %>" class="single_image">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
@@ -220,10 +243,13 @@
 						</li>
 						<li class="wow zoomIn">
 							<figure>
-								<img src="img/08-screenshot.jpg" alt="Screenshot 01">
+								<img
+								src="<%= require('./img/08-screenshot.jpg') %>"  
+								alt="Screenshot 01">
 								<figcaption>
+								
 								<div class="caption-content">
-									<a href="img/large/08.jpg" class="single_image">
+									<a href="<%= require('./img/08-screenshot.jpg') %>" class="single_image">
 										<i class="fa fa-search"></i>
 									</a>
 								</div>
@@ -234,6 +260,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="download" id="download">
 			<div class="container">
 				<div class="row">
@@ -278,7 +305,9 @@
 				<div class="row">
 					<div class="col-md-5">
 						<h1 class="footer-logo">
-						<img style="margin-top: -35px; width: 100px;" src="img/logoblue.png" alt="Aldo - Parrucchiere per uomo">
+						<img style="margin-top: -35px; width: 100px;" 
+						src="<%= require('./img/logoblue.png') %>" 
+						alt="Aldo - Parrucchiere per uomo">
 						</h1>
 						<p>Designed & Developed by <a target="_blank" href="http://www.federicorosati.com/">Federico Rosati</a></p>
 					</div>
@@ -318,7 +347,10 @@
 		<div id="loader_gif">
 			<h2>Attendi qualche secondo...</h2>
 			<h3>Per annullare <a href="index.html">clicca qui</a>.</h3>
-			<div><img src="img/477.gif"></div>
+			<div>
+			<img src="<%= require('./img/477.gif') %>" >
+
+			</div>
 		</div>
 
 	</body>

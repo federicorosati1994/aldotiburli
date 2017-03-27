@@ -25,18 +25,21 @@ $(document).ready(function() {
 
 	/***************** Flickity ******************/
 
-	$('#featuresSlider').flickity({
+	var Flickity = require('flickity');
+
+	new Flickity('#featuresSlider', {
 		cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false
 	});
 
-	$('#showcaseSlider').flickity({
+	//FIXME
+	/*new Flickity('#showcaseSlider', {
 		cellAlign: 'left',
 		contain: true,
 		prevNextButtons: false,
 		imagesLoaded: true
-	});
+	});*/
 
 	/***************** Fancybox ******************/
 
@@ -55,6 +58,8 @@ $(document).ready(function() {
 	});
 
 });
+
+
 
 $(document).ready(function() {
 	$("a.single_image").fancybox({

@@ -54,3 +54,9 @@ body {
 	font-size: 14px;
 	color: white;
 }
+
+
+/*For hardcode style tag*/
+.scrolloff{
+	    pointer-events: none;
+	}
