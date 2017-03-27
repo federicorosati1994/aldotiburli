@@ -1,10 +1,13 @@
 {
   "name": "aldotiburli",
   "version": "1.0.0",
-  "description": "My first optimization for aldotiburli's website",
+  "description": "Aldotiburli web site",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "rimraf dist",
+    "build": "webpack --color -p --progress --hide-modules",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -12,24 +15,30 @@
   },
   "keywords": [
     "aldotiburli",
-    "aldo",
-    "tiburli",
     "parrucchiere",
     "roma"
   ],
-  "author": "Federico Rosati",
-  "license": "ISC",
+  "author": "Daniele Salvatore <daniele.salvatore@fao.org> (http://fenix.fao.org/)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/federicorosati1994/aldotiburli/issues"
   },
   "homepage": "https://github.com/federicorosati1994/aldotiburli#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "flickity": "^2.0.5",
     "jquery": "^3.2.1",
-    "jquery.fancybox": "^2.1.5",
-    "modernizr": "^3.4.0",
-    "waypoints": "^4.0.1",
-    "wow": "0.0.6"
+    "modernizr": "^3.4.0"
+  },
+  "devDependencies": {
+    "css-loader": "^0.27.3",
+    "favicons-webpack-plugin": "0.0.7",
+    "file-loader": "^0.10.1",
+    "font-awesome": "^4.7.0",
+    "html-webpack-plugin": "^2.28.0",
+    "jquery": "^3.2.1",
+    "rimraf": "^2.6.1",
+    "url-loader": "^0.5.8",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "^2.4.2"
   }
 }
